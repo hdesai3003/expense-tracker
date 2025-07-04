@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import AuthLayout from '../../components/layouts/AuthLayout'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Input from '../../components/inputs/Input'
 
 const Login = () => {
@@ -34,6 +34,12 @@ const Login = () => {
                         placeholder="Min 8 Characters"
                         type="password"
                     />
+                    {error && <p>{error}</p>}
+                    <button type='submit'>Login</button>
+                    <p>
+                        Don't have an account?{" "}
+                        <Link to="/signup">Sign Up</Link>
+                    </p>
                 </form>
             </div>
         </AuthLayout>
