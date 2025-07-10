@@ -1,4 +1,4 @@
-EXPENSE-TRACKER
+#EXPENSE-TRACKER
 
 Master Your Finances, Empower Your Future
 
