@@ -1,4 +1,4 @@
-export const BASE_URL = import.meta.env.VITE_API_URL
+export const BASE_URL = "https://node-expense-backend.onrender.com/api/v1"
 
 // utils/apiPaths.js
 export const API_PATHS = {
