@@ -12,9 +12,10 @@ const app = express();
 
 //Middleware to handle CORS
 app.use(cors({
-    origin: 'https://expense-tracker-somb.onrender.com',
+    origin: 'https://mern-expense-frontend.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true, // If you use cookies or auth tokens
 }));
 
 app.use(express.json());
