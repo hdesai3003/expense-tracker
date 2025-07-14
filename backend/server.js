@@ -12,7 +12,7 @@ const app = express();
 
 //Middleware to handle CORS
 app.use(cors({
-    origin: process.env.CLIENT_URL || 'https://expense-tracker-somb.onrender.com',
+    origin: 'https://expense-tracker-somb.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 }));
